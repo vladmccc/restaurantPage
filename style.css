@@ -1,0 +1,119 @@
+@import url(
+'https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin:0 auto;
+	padding: 0;
+	font-family: 'Yaldevi', sans-serif;
+    
+}
+* {
+    transition: background 0.2s linear;
+    transition: color 0.2s linear;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  body.dark {
+    background-color: #292c35;
+  }
+  .checkbox {
+    opacity: 0;
+  }
+  
+  .label {
+    bottom: 5%;
+    left:50%;
+    align-self:center;
+    width: 60px;
+    height: 36px;
+    background-color:#111;
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    position: absolute;
+    transform: scale(1.5);
+  }
+  
+  .ball {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  /*  target the elemenent after the label*/
+  .checkbox:checked + .label .ball{
+    transform: translateX(24px);
+  }
+  
+  
+h1 {
+	color: black;
+	font-size: 80px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 22px;
+}
+.dark-mode h1{
+    background-color: black;
+    color: white;
+  }
+
+h6 {
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 60px;
+	margin-bottom: 20px;
+}
+.dark-mode h6 {
+    background-color: black;
+    color: white;
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+.myProducts-gallery img{
+	height: 92px;
+	margin: 10px 0;
+	cursor: pointer;
+	display: block;
+	opacity: .5;
+}
+
+.myProducts-gallery img:hover {
+	opacity: 1;
+}
+
+.myProducts-gallery {
+	float: left;
+}
+
+.myProducts {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	position: absolute;
+}
+
+.image-container img {
+	height: 400px;
+	transition: transform 1s;
+}
+
+.image-container img:hover{
+	transform: scale(1.5);
+	cursor: zoom-in;
+}
+
+.image-container {
+	float: right;
+	padding: 10px;
+}
